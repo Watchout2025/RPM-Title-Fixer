@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API File Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for finer control and overrides */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .container {
+            max-width: 800px; /* Adjusted max-width for a single column layout */
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        }
+        .files-list { /* Renamed from .files-grid for clarity */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack items vertically */
+            gap: 1.5rem; /* Space between items */
+        }
+        .file-item {
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-radius: 0.75rem; /* Rounded corners for items */
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 1rem; /* Add padding directly to the item */
+            width: 100%; /* Ensure item takes full width in the column */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+            display: flex; /* Use flexbox for internal layout */
+            flex-direction: column;
+            gap: 0.5rem; /* Gap between title, details, and button */
+        }
+        .file-item:hover {
+            transform: translateY(-0.5rem); /* Lift effect on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .file-details {
+            padding: 0; /* Remove padding as it's now on the file-item itself */
+        }
+        .file-details h3 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            color: #1a73e8; /* Google Blue for titles */
+            font-size: 1.15rem;
+            line-height: 1.4;
+            font-weight: 600; /* Semi-bold title */
+        }
+        /* New style for highlighted titles */
+        .file-details h3.highlight-red {
+            color: #dc2626; /* Tailwind's red-600 */
+        }
+        .file-details p {
+            margin: 0.3rem 0;
+            color: #5f6368; /* Google Gray for text */
+            font-size: 0.9rem;
+        }
+        .file-details p strong {
+            color: #3c4043; /* Darker gray for labels */
+        }
+        .error-message {
+            color: #d93025; /* Red for error messages */
+            font-weight: 600;
+            text-align: center;
+            padding: 1rem;
+        }
+        .loading-message {
+            color: #4285f4; /* Blue for loading messages */
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem;
+        }
+        .fix-button {
+            background-color: #ef4444; /* Red-500 */
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            align-self: flex-start; /* Align button to the left */
+            margin-top: 0.5rem; /* Space above the button */
+        }
+        .fix-button:hover {
+            background-color: #dc2626; /* Red-600 on hover */
+        }
+        .fix-button:disabled {
+            background-color: #9ca3af; /* Gray-400 when disabled */
+            cursor: not-allowed;
+        }
+        .status-message {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+        }
+        .status-message.success {
+            background-color: #d1fae5; /* Green-100 */
+            color: #065f46; /* Green-800 */
+        }
+        .status-message.error {
+            background-color: #fee2e2; /* Red-100 */
+            color: #991b1b; /* Red-800 */
+        }
+        .status-message.hidden {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8 lg:p-10">
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">API File Viewer</h1>
+        <div id="status-display" class="status-message hidden"></div>
+        <div id="files-container" class="files-list">
+            <p class="loading-message">Loading files...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const API_BASE_URL = 'https://hlsworker.watchoutofficial2006.workers.dev/';
+            const EDIT_API_BASE_URL = 'https://rpm-upload-proxy.watchoutofficial2006.workers.dev/file/edit';
+            const filesContainer = document.getElementById('files-container');
+            const statusDisplay = document.getElementById('status-display');
+
+            let statusTimeout; // To clear status messages after a delay
+
+            /**
+             * Displays a temporary status message to the user.
+             * @param {string} message - The message to display.
+             * @param {string} type - 'success' or 'error' for styling.
+             */
+            function showStatusMessage(message, type) {
+                clearTimeout(statusTimeout); // Clear any existing timeout
+                statusDisplay.textContent = message;
+                statusDisplay.className = `status-message ${type}`; // Reset classes
+                statusDisplay.classList.remove('hidden');
+
+                statusTimeout = setTimeout(() => {
+                    statusDisplay.classList.add('hidden');
+                }, 5000); // Hide after 5 seconds
+            }
+
+            /**
+             * Fetches data from the specified API endpoint.
+             * Handles success and error cases, updating the UI accordingly.
+             */
+            async function fetchData() {
+                try {
+                    // Clear previous content and show loading message
+                    filesContainer.innerHTML = `<p class="loading-message">Loading files...</p>`;
+                    statusDisplay.classList.add('hidden'); // Hide any previous status messages
+
+                    const response = await fetch(API_BASE_URL);
+
+                    // Check if the HTTP response was successful
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+
+                    // Check if the API response itself indicates an error or missing result
+                    if (data.status !== 200 || !data.result || !data.result.files) {
+                        throw new Error(`API returned an error or unexpected structure: ${data.msg || 'Unknown error'}`);
+                    }
+
+                    displayData(data.result.files);
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                    // Display a user-friendly error message
+                    filesContainer.innerHTML = `<p class="error-message">Failed to load data. Please try again later. Details: ${error.message}</p>`;
+                    showStatusMessage(`Failed to load data: ${error.message}`, 'error');
+                }
+            }
+
+            /**
+             * Displays the fetched file data in the UI.
+             * Creates a card for each file with its title, length, and file code.
+             * Titles containing '-', ' ', '?', or the pattern 'SXX.EXX' will be highlighted in red.
+             * A "Fix Title" button is added for highlighted titles.
+             * @param {Array<Object>} files - An array of file objects from the API.
+             */
+            function displayData(files) {
+                filesContainer.innerHTML = ''; // Clear the loading/error message
+
+                if (files.length === 0) {
+                    filesContainer.innerHTML = `<p class="text-gray-600 text-center p-4">No files available to display.</p>`;
+                    return;
+                }
+
+                // Regular expression to match 'SXX.EXX' pattern (e.g., S01.E01, S10.E25)
+                const sxxexxRegex = /S\d{2}\.E\d{2}/i;
+
+                files.forEach(file => {
+                    // Create the main container for each file item
+                    const fileItem = document.createElement('div');
+                    fileItem.classList.add('file-item');
+
+                    // Create the div for file details (title, length, file_code)
+                    const fileDetails = document.createElement('div');
+                    fileDetails.classList.add('file-details');
+
+                    // Create and set the file title
+                    const title = document.createElement('h3');
+                    title.textContent = file.title || 'Untitled File';
+
+                    // Determine if the title needs highlighting and a fix button
+                    const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title));
+                    if (needsFix) {
+                        title.classList.add('highlight-red');
+                    }
+
+                    // Create and set the file length, formatted for readability
+                    const length = document.createElement('p');
+                    const fileLength = file.length ? formatLength(file.length) : 'N/A';
+                    length.innerHTML = `<strong>Length:</strong> ${fileLength}`;
+
+                    // Create and set the file code
+                    const fileCode = document.createElement('p');
+                    fileCode.innerHTML = `<strong>File Code:</strong> ${file.file_code || 'N/A'}`;
+
+                    // Append details to the fileDetails div
+                    fileDetails.appendChild(title);
+                    fileDetails.appendChild(length);
+                    fileDetails.appendChild(fileCode);
+
+                    // Append fileDetails to the main file item
+                    fileItem.appendChild(fileDetails);
+
+                    // Add "Fix Title" button if needed
+                    if (needsFix) {
+                        const fixButton = document.createElement('button');
+                        fixButton.classList.add('fix-button');
+                        fixButton.textContent = 'Fix Title';
+                        fixButton.dataset.fileCode = file.file_code; // Store file_code for easy access
+                        fixButton.dataset.originalTitle = file.title; // Store original title
+
+                        fixButton.addEventListener('click', async () => {
+                            fixButton.disabled = true; // Disable button during processing
+                            fixButton.textContent = 'Fixing...';
+
+                            const originalTitle = fixButton.dataset.originalTitle;
+                            const currentFileCode = fixButton.dataset.fileCode;
+
+                            // Sanitize the title: replace hyphens, spaces, and question marks with dots
+                            // This regex replaces one or more occurrences of these characters with a single dot
+                            const updatedTitle = originalTitle.replace(/[- ?]+/g, '.');
+
+                            await sendTitleUpdateRequest(currentFileCode, updatedTitle);
+
+                            fixButton.textContent = 'Fix Title'; // Reset button text
+                            fixButton.disabled = false; // Re-enable button
+                        });
+                        fileItem.appendChild(fixButton);
+                    }
+
+                    // Append the complete file item to the main container
+                    filesContainer.appendChild(fileItem);
+                });
+            }
+
+            /**
+             * Sends an API request to update the file title.
+             * @param {string} fileCode - The code of the file to update.
+             * @param {string} newTitle - The new title for the file.
+             */
+            async function sendTitleUpdateRequest(fileCode, newTitle) {
+                // Encode the new title to be safely used in a URL
+                const encodedTitle = encodeURIComponent(newTitle);
+                const editApiUrl = `${EDIT_API_BASE_URL}?file_code=${fileCode}&file_title=${encodedTitle}`;
+
+                try {
+                    const response = await fetch(editApiUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const result = await response.json();
+
+                    if (result.status === 200 && result.msg === "OK") {
+                        showStatusMessage(`Title for file ${fileCode} updated successfully!`, 'success');
+                        // Refresh data to reflect the change
+                        fetchData();
+                    } else {
+                        throw new Error(`API response: ${result.msg || 'Unknown error'}`);
+                    }
+                } catch (error) {
+                    console.error('Error updating title:', error);
+                    showStatusMessage(`Failed to update title for ${fileCode}: ${error.message}`, 'error');
+                }
+            }
+
+            /**
+             * Helper function to format video length from seconds to HH:MM:SS.
+             * @param {number} seconds - The total length in seconds.
+             * @returns {string} Formatted time string (e.g., "01:23:45").
+             */
+            function formatLength(seconds) {
+                if (typeof seconds !== 'number' || isNaN(seconds) || seconds < 0) {
+                    return 'N/A'; // Handle invalid input
+                }
+                const h = Math.floor(seconds / 3600);
+                const m = Math.floor((seconds % 3600) / 60);
+                const s = Math.floor(seconds % 60); // Ensure seconds are whole numbers
+
+                // Pad with leading zeros if necessary
+                const parts = [h, m, s].map(v => v < 10 ? '0' + v : v);
+
+                // Only include hours if they are non-zero
+                return h > 0 ? `${parts[0]}:${parts[1]}:${parts[2]}` : `${parts[1]}:${parts[2]}`;
+            }
+
+            // Call the fetchData function when the DOM is fully loaded to populate the content
+            fetchData();
+        });
+    </script>
+</body>
+</html>
