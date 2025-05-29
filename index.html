@@ -260,9 +260,11 @@
                             const originalTitle = fixButton.dataset.originalTitle;
                             const currentFileCode = fixButton.dataset.fileCode;
 
-                            // Sanitize the title: replace hyphens, spaces, and question marks with dots
-                            // This regex replaces one or more occurrences of these characters with a single dot
-                            const updatedTitle = originalTitle.replace(/[- ?]+/g, '.');
+                            // Sanitize the title:
+                            // 1. Replace one or more occurrences of hyphens, spaces, and question marks with a single dot.
+                            let updatedTitle = originalTitle.replace(/[- ?]+/g, '.');
+                            // 2. Remove the dot from 'SXX.EXX' patterns.
+                            updatedTitle = updatedTitle.replace(/S(\d{2})\.E(\d{2})/gi, 'S$1E$2');
 
                             await sendTitleUpdateRequest(currentFileCode, updatedTitle);
 
