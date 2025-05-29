@@ -122,12 +122,38 @@
             margin: 0;
             overflow: hidden;
         }
+        .fix-all-button-container {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .fix-all-button {
+            background-color: #2563eb; /* Blue-600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.2s ease;
+        }
+        .fix-all-button:hover {
+            background-color: #1d4ed8; /* Blue-700 on hover */
+        }
+        .fix-all-button:disabled {
+            background-color: #9ca3af; /* Gray-400 when disabled */
+            cursor: not-allowed;
+        }
     </style>
 </head>
 <body class="p-4 sm:p-6 md:p-8 lg:p-10">
     <div class="container">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">API File Viewer</h1>
         <div id="status-display" class="status-message hidden"></div>
+
+        <div class="fix-all-button-container">
+            <button id="fix-all-titles-button" class="fix-all-button">Fix All Highlighted Titles</button>
+        </div>
+
         <div id="files-container" class="files-list">
             <p class="loading-message">Loading files...</p>
         </div>
@@ -139,6 +165,7 @@
             const EDIT_API_BASE_URL = 'https://rpm-upload-proxy.watchoutofficial2006.workers.dev/file/edit';
             const filesContainer = document.getElementById('files-container');
             const statusDisplay = document.getElementById('status-display');
+            const fixAllButton = document.getElementById('fix-all-titles-button');
 
             let statusTimeout; // To clear status messages after a delay
 
@@ -167,6 +194,7 @@
                     // Clear previous content and show loading message
                     filesContainer.innerHTML = `<p class="loading-message">Loading files...</p>`;
                     statusDisplay.classList.add('hidden'); // Hide any previous status messages
+                    fixAllButton.disabled = true; // Disable fix all button while loading
 
                     const response = await fetch(API_BASE_URL);
 
@@ -183,11 +211,13 @@
                     }
 
                     displayData(data.result.files);
+                    fixAllButton.disabled = false; // Re-enable fix all button after loading
                 } catch (error) {
                     console.error('Error fetching data:', error);
                     // Display a user-friendly error message
                     filesContainer.innerHTML = `<p class="error-message">Failed to load data. Please try again later. Details: ${error.message}</p>`;
                     showStatusMessage(`Failed to load data: ${error.message}`, 'error');
+                    fixAllButton.disabled = true; // Keep disabled on error
                 }
             }
 
@@ -283,9 +313,9 @@
              * Sends an API request to update the file title.
              * @param {string} fileCode - The code of the file to update.
              * @param {string} newTitle - The new title for the file.
+             * @returns {Promise<boolean>} True if update was successful, false otherwise.
              */
             async function sendTitleUpdateRequest(fileCode, newTitle) {
-                // Encode the new title to be safely used in a URL
                 const encodedTitle = encodeURIComponent(newTitle);
                 const editApiUrl = `${EDIT_API_BASE_URL}?file_code=${fileCode}&file_title=${encodedTitle}`;
 
@@ -297,17 +327,61 @@
                     const result = await response.json();
 
                     if (result.status === 200 && result.msg === "OK") {
-                        showStatusMessage(`Title for file ${fileCode} updated successfully!`, 'success');
-                        // Refresh data to reflect the change
-                        fetchData();
+                        return true; // Success
                     } else {
                         throw new Error(`API response: ${result.msg || 'Unknown error'}`);
                     }
                 } catch (error) {
-                    console.error('Error updating title:', error);
+                    console.error(`Error updating title for ${fileCode}:`, error);
                     showStatusMessage(`Failed to update title for ${fileCode}: ${error.message}`, 'error');
+                    return false; // Failure
                 }
             }
+
+            /**
+             * Handles the "Fix All" button click.
+             * Iterates through all highlighted titles, fixes them, and sends update requests.
+             */
+            fixAllButton.addEventListener('click', async () => {
+                fixAllButton.disabled = true;
+                fixAllButton.textContent = 'Fixing All...';
+                showStatusMessage('Starting to fix all titles...', 'info'); // Use 'info' if you have that style, otherwise 'success' or 'error'
+
+                const titlesToFix = document.querySelectorAll('.file-details h3.highlight-red');
+                let successCount = 0;
+                let failCount = 0;
+
+                // Regular expression to match 'SXX.EXX' pattern (e.g., S01.E01, S10.E25)
+                const sxxexxRegex = /S(\d{2})\.E(\d{2})/gi;
+
+                for (const titleElement of titlesToFix) {
+                    const fileItem = titleElement.closest('.file-item');
+                    const fileCode = fileItem.querySelector('p strong').nextSibling.textContent.trim(); // Extract file code
+                    const originalTitle = titleElement.textContent;
+
+                    // Sanitize the title:
+                    let updatedTitle = originalTitle.replace(/[- ?]+/g, '.');
+                    updatedTitle = updatedTitle.replace(sxxexxRegex, 'S$1E$2');
+
+                    const success = await sendTitleUpdateRequest(fileCode, updatedTitle);
+                    if (success) {
+                        successCount++;
+                    } else {
+                        failCount++;
+                    }
+                }
+
+                if (successCount > 0 || failCount > 0) {
+                    showStatusMessage(`Finished fixing titles. Successes: ${successCount}, Failures: ${failCount}`, failCount > 0 ? 'error' : 'success');
+                } else {
+                    showStatusMessage('No titles needed fixing.', 'success');
+                }
+
+                fixAllButton.textContent = 'Fix All Highlighted Titles';
+                fixAllButton.disabled = false;
+                fetchData(); // Refresh data to show all changes
+            });
+
 
             /**
              * Helper function to format video length from seconds to HH:MM:SS.
