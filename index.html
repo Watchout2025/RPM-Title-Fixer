@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API File Viewer</title>
+    <title>RPM Title Fixer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Automatically detect Fix title And Update data in every 5 sec without flicker*/
         /* Custom CSS for finer control and overrides */
         body {
             font-family: 'Inter', sans-serif;
@@ -24,6 +25,7 @@
             display: flex; /* Use flexbox */
             flex-direction: column; /* Stack items vertically */
             gap: 1.5rem; /* Space between items */
+            min-height: 100px; /* Added for debugging: ensures container has some height */
         }
         .file-item {
             background-color: #fdfdfd;
@@ -79,25 +81,6 @@
             text-align: center;
             padding: 1rem;
         }
-        .fix-button {
-            background-color: #ef4444; /* Red-500 */
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background-color 0.2s ease;
-            align-self: flex-start; /* Align button to the left */
-            margin-top: 0.5rem; /* Space above the button */
-        }
-        .fix-button:hover {
-            background-color: #dc2626; /* Red-600 on hover */
-        }
-        .fix-button:disabled {
-            background-color: #9ca3af; /* Gray-400 when disabled */
-            cursor: not-allowed;
-        }
         .status-message {
             margin-top: 1rem;
             padding: 0.75rem;
@@ -126,7 +109,7 @@
 </head>
 <body class="p-4 sm:p-6 md:p-8 lg:p-10">
     <div class="container">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">API File Viewer</h1>
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">RPM Title Fixer</h1>
         <div id="status-display" class="status-message hidden"></div>
         <div id="files-container" class="files-list">
             <p class="loading-message">Loading files...</p>
@@ -134,203 +117,186 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const API_BASE_URL = 'https://hlsworker.watchoutofficial2006.workers.dev/?page=1&per_page=50';
-            const EDIT_API_BASE_URL = 'https://rpm-upload-proxy.watchoutofficial2006.workers.dev/file/edit';
-            const filesContainer = document.getElementById('files-container');
-            const statusDisplay = document.getElementById('status-display');
+        // No longer using a global map to store references to file items
+        let pollingIntervalId; // To store the interval ID for clearing later
 
-            let statusTimeout; // To clear status messages after a delay
+        const API_BASE_URL = 'https://hlsworker.watchoutofficial2006.workers.dev/?page=1&per_page=50';
+        const EDIT_API_BASE_URL = 'https://rpm-upload-proxy.watchoutofficial2006.workers.dev/file/edit';
+        const filesContainer = document.getElementById('files-container');
+        const statusDisplay = document.getElementById('status-display');
 
-            /**
-             * Displays a temporary status message to the user.
-             * @param {string} message - The message to display.
-             * @param {string} type - 'success' or 'error' for styling.
-             */
-            function showStatusMessage(message, type) {
-                clearTimeout(statusTimeout); // Clear any existing timeout
-                statusDisplay.textContent = message;
-                statusDisplay.className = `status-message ${type}`; // Reset classes
-                statusDisplay.classList.remove('hidden');
+        let statusTimeout; // To clear status messages after a delay
 
-                statusTimeout = setTimeout(() => {
-                    statusDisplay.classList.add('hidden');
-                }, 5000); // Hide after 5 seconds
+        /**
+         * Displays a temporary status message to the user.
+         * @param {string} message - The message to display.
+         * @param {string} type - 'success' or 'error' for styling.
+         */
+        function showStatusMessage(message, type) {
+            clearTimeout(statusTimeout); // Clear any existing timeout
+            statusDisplay.textContent = message;
+            statusDisplay.className = `status-message ${type}`; // Reset classes
+            statusDisplay.classList.remove('hidden');
+
+            statusTimeout = setTimeout(() => {
+                statusDisplay.classList.add('hidden');
+            }, 5000); // Hide after 5 seconds
+        }
+
+        /**
+         * Displays or updates the fetched file data in the UI.
+         * Clears the existing list and re-renders all files from scratch.
+         * @param {Array<Object>} files - An array of file objects from the API.
+         */
+        function updateDisplay(files) {
+            console.log('updateDisplay called with', files.length, 'files from API. Re-rendering all files.');
+
+            // Clear the entire files container before re-rendering
+            filesContainer.innerHTML = '';
+
+            // If no files are available, display a message.
+            if (files.length === 0) {
+                filesContainer.innerHTML = `<p class="text-gray-600 text-center p-4">No files available to display.</p>`;
+                console.log('No files available to display.');
+                return;
             }
 
-            /**
-             * Fetches data from the specified API endpoint.
-             * Handles success and error cases, updating the UI accordingly.
-             */
-            async function fetchData() {
-                try {
-                    // Clear previous content and show loading message
-                    filesContainer.innerHTML = `<p class="loading-message">Loading files...</p>`;
-                    statusDisplay.classList.add('hidden'); // Hide any previous status messages
+            // Regular expression to match 'SXX.EXX' pattern (e.g., S01.E01, S10.E25)
+            const sxxexxRegex = /S\d{2}\.E\d{2}/i;
 
-                    const response = await fetch(API_BASE_URL);
+            files.forEach(file => {
+                // Always create new elements for each file
+                const fileItem = document.createElement('div');
+                fileItem.classList.add('file-item');
+                fileItem.dataset.fileCode = file.file_code; // Store file code for reference
 
-                    // Check if the HTTP response was successful
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
+                const fileDetails = document.createElement('div');
+                fileDetails.classList.add('file-details');
 
-                    const data = await response.json();
+                const titleElement = document.createElement('h3');
+                titleElement.textContent = file.title || 'Untitled File';
+                fileDetails.appendChild(titleElement);
 
-                    // Check if the API response itself indicates an error or missing result
-                    if (data.status !== 200 || !data.result || !data.result.files) {
-                        throw new Error(`API returned an error or unexpected structure: ${data.msg || 'Unknown error'}`);
-                    }
+                const fileCodeElement = document.createElement('p');
+                fileCodeElement.innerHTML = `<strong>File Code:</strong> ${file.file_code || 'N/A'}`;
+                fileDetails.appendChild(fileCodeElement);
 
-                    displayData(data.result.files);
-                } catch (error) {
-                    console.error('Error fetching data:', error);
-                    // Display a user-friendly error message
-                    filesContainer.innerHTML = `<p class="error-message">Failed to load data. Please try again later. Details: ${error.message}</p>`;
-                    showStatusMessage(`Failed to load data: ${error.message}`, 'error');
-                }
-            }
+                fileItem.appendChild(fileDetails);
+                filesContainer.appendChild(fileItem); // Append the newly created file item
 
-            /**
-             * Displays the fetched file data in the UI.
-             * Creates a card for each file with its title, length, and file code.
-             * Titles containing '-', ' ', '?', or the pattern 'SXX.EXX' will be highlighted in red.
-             * A "Fix Title" button is added for highlighted titles.
-             * @param {Array<Object>} files - An array of file objects from the API.
-             */
-            function displayData(files) {
-                filesContainer.innerHTML = ''; // Clear the loading/error message
+                // Determine if the title needs fixing
+                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title));
 
-                if (files.length === 0) {
-                    filesContainer.innerHTML = `<p class="text-gray-600 text-center p-4">No files available to display.</p>`;
-                    return;
-                }
+                if (needsFix) {
+                    titleElement.classList.add('highlight-red');
+                    console.log(`[${file.file_code}] Title needs fixing, highlighting red.`);
 
-                // Regular expression to match 'SXX.EXX' pattern (e.g., S01.E01, S10.E25)
-                const sxxexxRegex = /S\d{2}\.E\d{2}/i;
+                    // Sanitize the title:
+                    let updatedTitle = file.title.replace(/[- ?]+/g, '.');
+                    updatedTitle = updatedTitle.replace(/S(\d{2})\.E(\d{2})/gi, 'S$1E$2');
 
-                files.forEach(file => {
-                    // Create the main container for each file item
-                    const fileItem = document.createElement('div');
-                    fileItem.classList.add('file-item');
-
-                    // Create the div for file details (title, length, file_code)
-                    const fileDetails = document.createElement('div');
-                    fileDetails.classList.add('file-details');
-
-                    // Create and set the file title
-                    const title = document.createElement('h3');
-                    title.textContent = file.title || 'Untitled File';
-
-                    // Determine if the title needs highlighting and a fix button
-                    const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title));
-                    if (needsFix) {
-                        title.classList.add('highlight-red');
-                    }
-
-                    // Create and set the file length, formatted for readability
-                    const length = document.createElement('p');
-                    const fileLength = file.length ? formatLength(file.length) : 'N/A';
-                    length.innerHTML = `<strong>Length:</strong> ${fileLength}`;
-
-                    // Create and set the file code
-                    const fileCode = document.createElement('p');
-                    fileCode.innerHTML = `<strong>File Code:</strong> ${file.file_code || 'N/A'}`;
-
-                    // Append details to the fileDetails div
-                    fileDetails.appendChild(title);
-                    fileDetails.appendChild(length);
-                    fileDetails.appendChild(fileCode);
-
-                    // Append fileDetails to the main file item
-                    fileItem.appendChild(fileDetails);
-
-                    // Add "Fix Title" button if needed
-                    if (needsFix) {
-                        const fixButton = document.createElement('button');
-                        fixButton.classList.add('fix-button');
-                        fixButton.textContent = 'Fix Title';
-                        fixButton.dataset.fileCode = file.file_code; // Store file_code for easy access
-                        fixButton.dataset.originalTitle = file.title; // Store original title
-
-                        fixButton.addEventListener('click', async () => {
-                            fixButton.disabled = true; // Disable button during processing
-                            fixButton.textContent = 'Fixing...';
-
-                            const originalTitle = fixButton.dataset.originalTitle;
-                            const currentFileCode = fixButton.dataset.fileCode;
-
-                            // Sanitize the title:
-                            // 1. Replace one or more occurrences of hyphens, spaces, and question marks with a single dot.
-                            let updatedTitle = originalTitle.replace(/[- ?]+/g, '.');
-                            // 2. Remove the dot from 'SXX.EXX' patterns.
-                            updatedTitle = updatedTitle.replace(/S(\d{2})\.E(\d{2})/gi, 'S$1E$2');
-
-                            await sendTitleUpdateRequest(currentFileCode, updatedTitle);
-
-                            fixButton.textContent = 'Fix Title'; // Reset button text
-                            fixButton.disabled = false; // Re-enable button
-                        });
-                        fileItem.appendChild(fixButton);
-                    }
-
-                    // Append the complete file item to the main container
-                    filesContainer.appendChild(fileItem);
-                });
-            }
-
-            /**
-             * Sends an API request to update the file title.
-             * @param {string} fileCode - The code of the file to update.
-             * @param {string} newTitle - The new title for the file.
-             */
-            async function sendTitleUpdateRequest(fileCode, newTitle) {
-                // Encode the new title to be safely used in a URL
-                const encodedTitle = encodeURIComponent(newTitle);
-                const editApiUrl = `${EDIT_API_BASE_URL}?file_code=${fileCode}&file_title=${encodedTitle}`;
-
-                try {
-                    const response = await fetch(editApiUrl);
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    const result = await response.json();
-
-                    if (result.status === 200 && result.msg === "OK") {
-                        showStatusMessage(`Title for file ${fileCode} updated successfully!`, 'success');
-                        // Refresh data to reflect the change
-                        fetchData();
+                    // Only send update request if the title actually needs changing
+                    if (updatedTitle !== file.title) {
+                        console.log(`[${file.file_code}] Original: "${file.title}", Calculated New: "${updatedTitle}". Sending update request...`);
+                        // Call the fix function directly for automatic fixing
+                        sendTitleUpdateRequest(file.file_code, updatedTitle);
                     } else {
-                        throw new Error(`API response: ${result.msg || 'Unknown error'}`);
+                        // Title is already fixed based on logic, so remove highlight if it was there
+                        console.log(`[${file.file_code}] Title appears already fixed based on local logic, removing highlight.`);
+                        titleElement.classList.remove('highlight-red');
                     }
-                } catch (error) {
-                    console.error('Error updating title:', error);
-                    showStatusMessage(`Failed to update title for ${fileCode}: ${error.message}`, 'error');
+
+                } else {
+                    console.log(`[${file.file_code}] Title does NOT need fixing, removing highlight (if any).`);
+                    titleElement.classList.remove('highlight-red');
                 }
-            }
+            });
+            console.log('Re-render complete. Total file items in DOM:', filesContainer.children.length);
+        }
 
-            /**
-             * Helper function to format video length from seconds to HH:MM:SS.
-             * @param {number} seconds - The total length in seconds.
-             * @returns {string} Formatted time string (e.g., "01:23:45").
-             */
-            function formatLength(seconds) {
-                if (typeof seconds !== 'number' || isNaN(seconds) || seconds < 0) {
-                    return 'N/A'; // Handle invalid input
+        /**
+         * Fetches data from the specified API endpoint.
+         * Handles success and error cases, updating the UI accordingly.
+         */
+        async function fetchData() {
+            console.log('Fetching data...');
+            // Only show loading message if the container is currently empty
+            if (filesContainer.innerHTML === '' || filesContainer.innerHTML.includes('No files available to display.')) {
+                filesContainer.innerHTML = `<p class="loading-message">Loading files...</p>`;
+            }
+            statusDisplay.classList.add('hidden'); // Hide any previous status messages
+
+            try {
+                const response = await fetch(API_BASE_URL);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const h = Math.floor(seconds / 3600);
-                const m = Math.floor((seconds % 3600) / 60);
-                const s = Math.floor(seconds % 60); // Ensure seconds are whole numbers
 
-                // Pad with leading zeros if necessary
-                const parts = [h, m, s].map(v => v < 10 ? '0' + v : v);
+                const data = await response.json();
+                console.log('API response received:', data);
 
-                // Only include hours if they are non-zero
-                return h > 0 ? `${parts[0]}:${parts[1]}:${parts[2]}` : `${parts[1]}:${parts[2]}`;
+                if (data.status !== 200 || !data.result || !data.result.files) {
+                    throw new Error(`API returned an error or unexpected structure: ${data.msg || 'Unknown error'}`);
+                }
+
+                updateDisplay(data.result.files); // Call updateDisplay to manage UI elements
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                // Only display error message if the container is currently empty or was showing loading/no files
+                if (filesContainer.innerHTML === '' || filesContainer.innerHTML.includes('Loading files...') || filesContainer.innerHTML.includes('No files available to display.')) {
+                    filesContainer.innerHTML = `<p class="error-message">Failed to load data. Please try again later. Details: ${error.message}</p>`;
+                }
+                showStatusMessage(`Failed to load data: ${error.message}`, 'error');
             }
+        }
 
-            // Call the fetchData function when the DOM is fully loaded to populate the content
-            fetchData();
+        /**
+         * Sends an API request to update the file title.
+         * @param {string} fileCode - The code of the file to update.
+         * @param {string} newTitle - The new title for the file.
+         */
+        async function sendTitleUpdateRequest(fileCode, newTitle) {
+            console.log('sendTitleUpdateRequest called for:', fileCode, 'New Title:', newTitle);
+            const encodedTitle = encodeURIComponent(newTitle);
+            const editApiUrl = `${EDIT_API_BASE_URL}?file_code=${fileCode}&file_title=${encodedTitle}`;
+
+            try {
+                const response = await fetch(editApiUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const result = await response.json();
+                console.log('API update response for', fileCode, ':', result);
+
+                if (result.status === 200 && result.msg === "OK") {
+                    showStatusMessage(`Title for file ${fileCode} updated successfully!`, 'success');
+                    // Trigger a re-fetch to get the latest state including the fixed title
+                    fetchData();
+                } else {
+                    throw new Error(`API response: ${result.msg || 'Unknown error'}`);
+                }
+            } catch (error) {
+                console.error('Error updating title:', error);
+                showStatusMessage(`Failed to update title for ${fileCode}: ${error.message}`, 'error');
+            }
+        }
+
+        // Initial fetch when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchData(); // Perform an initial fetch to populate the content
+            // Set up polling to fetch data every 5 seconds
+            pollingIntervalId = setInterval(fetchData, 5000);
+            console.log('Polling started (every 5 seconds).');
+        });
+
+        // Clear the polling interval when the window is about to be unloaded
+        // This helps prevent memory leaks and unnecessary background activity.
+        window.addEventListener('beforeunload', () => {
+            if (pollingIntervalId) {
+                clearInterval(pollingIntervalId);
+                console.log('Polling stopped.');
+            }
         });
     </script>
 </body>
