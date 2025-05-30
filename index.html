@@ -164,6 +164,8 @@
 
             // Regular expression to match 'SXX.EXX' pattern (e.g., S01.E01, S10.E25)
             const sxxexxRegex = /S\d{2}\.E\d{2}/i;
+            // Regular expression to match any type of brackets
+            const bracketsRegex = /[()\[\]{}]/g;
 
             files.forEach(file => {
                 // Always create new elements for each file
@@ -186,7 +188,7 @@
                 filesContainer.appendChild(fileItem); // Append the newly created file item
 
                 // Determine if the title needs fixing
-                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title));
+                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
 
                 if (needsFix) {
                     titleElement.classList.add('highlight-red');
