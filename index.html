@@ -188,7 +188,7 @@
                 filesContainer.appendChild(fileItem); // Append the newly created file item
 
                 // Determine if the title needs fixing
-                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
+                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || /BollYFlix/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
 
                 if (needsFix) {
                     titleElement.classList.add('highlight-red');
@@ -200,6 +200,7 @@
                     // New rule: Remove any kind of brackets
                     updatedTitle = updatedTitle.replace(bracketsRegex, '');
                     updatedTitle = updatedTitle.replace(/HDHub4u(\.Ms|\.com)?/gi, 'watchout.fun'); // NEW: replace branding
+                    updatedTitle = updatedTitle.replace(/BollYFlix/gi, 'watchout.fun');
 
                     // Only send update request if the title actually needs changing
                     if (updatedTitle !== file.title) {
