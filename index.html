@@ -188,7 +188,7 @@
                 filesContainer.appendChild(fileItem); // Append the newly created file item
 
                 // Determine if the title needs fixing
-                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
+                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
 
                 if (needsFix) {
                     titleElement.classList.add('highlight-red');
