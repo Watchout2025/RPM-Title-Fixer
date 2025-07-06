@@ -199,7 +199,7 @@
                     updatedTitle = updatedTitle.replace(/S(\d{2})\.E(\d{2})/gi, 'S$1E$2');
                     // New rule: Remove any kind of brackets
                     updatedTitle = updatedTitle.replace(bracketsRegex, '');
-                    updatedTitle = updatedTitle.replace(/HDHub4u\.Ms/gi, 'watchout.fun'); // NEW: replace branding
+                    updatedTitle = updatedTitle.replace(/HDHub4u(\.Ms|\.com)?/gi, 'watchout.fun'); // NEW: replace branding
 
                     // Only send update request if the title actually needs changing
                     if (updatedTitle !== file.title) {
