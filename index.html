@@ -188,7 +188,7 @@
                 filesContainer.appendChild(fileItem); // Append the newly created file item
 
                 // Determine if the title needs fixing
-                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || /CinemaLuxe/i.test(file.title) || /Vegamovies(\.to|\.com)?/i.test(file.title) || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || /BollYFlix/i.test(file.title) || /4kHdHub(\.Ms|\.Com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
+                const needsFix = file.title && (file.title.includes('-') || file.title.includes(' ') || file.title.includes('?') || /CinemaLuxe/i.test(file.title) || /Vegamovies(\.to|\.NL)?/i.test(file.title) || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || /BollYFlix/i.test(file.title) || /4kHdHub(\.Ms|\.Com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
 
                 if (needsFix) {
                     titleElement.classList.add('highlight-red');
@@ -201,7 +201,7 @@
                     updatedTitle = updatedTitle.replace(bracketsRegex, '');
                     updatedTitle = updatedTitle.replace(/HDHub4u(\.Ms|\.com)?/gi, 'watchout.fun');
                     updatedTitle = updatedTitle.replace(/4kHdHub(\.Ms|\.Com)?/gi, 'watchout.fun');// NEW: replace branding
-                    updatedTitle = updatedTitle.replace(/Vegamovies(\.to|\.Com)?/gi, 'watchout.fun');
+                    updatedTitle = updatedTitle.replace(/Vegamovies(\.to|\.NL)?/gi, 'watchout.fun');
                     updatedTitle = updatedTitle.replace(/CinemaLuxe/gi, 'watchout.fun');
                     updatedTitle = updatedTitle.replace(/BollYFlix/gi, 'watchout.fun');
 
