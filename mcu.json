@@ -1,219 +1,44 @@
 [
   {
-    "id": 10138,
-    "title": "Iron Man",
-    "year": 2008,
-    "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/6P3c80EOm7BodndGBUAJHHsHKrp.jpg"
-  },
-  {
-    "id": 346364,
-    "title": "The Incredible Hulk",
-    "year": 2008,
-    "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/8lESiPOtXNc2WALM23YV0yU7YsB.jpg"
-  },
-  {
-    "id": 10195,
-    "title": "Iron Man 2",
-    "year": 2010,
-    "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/bgGEOjbPS9wrvZe17oEjzRi1f0A.jpg"
-  },
-  {
-    "id": 76341,
-    "title": "Thor",
-    "year": 2011,
-    "poster": "https://image.tmdb.org/t/p/w500/bIuOWTSTlkFGBnD2QCJmX6DuQUS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/1Gx1v64X57bl6hSMcK74zpN4Z5b.jpg"
-  },
-  {
-    "id": 68721,
     "title": "Captain America: The First Avenger",
-    "year": 2011,
-    "poster": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/k2TwHzwuZJWjmxGlpTZGIoriSRY.jpg"
+    "id": 1771,
+    "poster": "https://image.tmdb.org/t/p/original/erX60cjPX14MeQoV8y00IfMQP2a.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/cYlbgqeeKufdEdDoZQUyZsl11II.jpg",
+    "mediaType": "movie"
   },
   {
-    "id": 24428,
-    "title": "The Avengers",
-    "year": 2012,
-    "poster": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/EtXEBMZ74Qjs3Uc47o8SXGxvxX.jpg"
-  },
-  {
-    "id": 68718,
-    "title": "Iron Man 3",
-    "year": 2013,
-    "poster": "https://image.tmdb.org/t/p/w500/523uVO0VfPbkBByPmlgXWlaEt4y.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/6P3c80EOm7BodndGBUAJHHsHKrp.jpg"
-  },
-  {
-    "id": 76338,
-    "title": "Thor: The Dark World",
-    "year": 2013,
-    "poster": "https://image.tmdb.org/t/p/w500/7qFfXc0fXI3K14KCkzX7oRxoLV1.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/gxAx7cjVBz0bqXkvVYVnsT0IiFk.jpg"
-  },
-  {
-    "id": 100402,
-    "title": "Captain America: The Winter Soldier",
-    "year": 2014,
-    "poster": "https://image.tmdb.org/t/p/w500/8yhtzsbB4evki0ORfX1hb2139CX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/hE24GYddaxB9MVZl1CaiI86M3kp.jpg"
-  },
-  {
-    "id": 120,
-    "title": "Guardians of the Galaxy",
-    "year": 2014,
-    "poster": "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/y31QB9kn3XSudA15tV7UWQ9XLuW.jpg"
-  },
-  {
-    "id": 99861,
-    "title": "Avengers: Age of Ultron",
-    "year": 2015,
-    "poster": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/8rrr2172HRBswmXhPPH7HQMzk0h.jpg"
-  },
-  {
-    "id": 102899,
-    "title": "Ant-Man",
-    "year": 2015,
-    "poster": "https://image.tmdb.org/t/p/w500/D9mmxhpWcDYpXP7GIbdgI9soFUX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/6P3c80EOm7BodndGBUAJHHsHKrp.jpg"
-  },
-  {
-    "id": 274,
-    "title": "Captain America: Civil War",
-    "year": 2016,
-    "poster": "https://image.tmdb.org/t/p/w500/z4x0Bp29ndC5dS0bKzsnUFz0bFZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/tVFRBgfUZP3Do5dDhnJ2T6mpbRP.jpg"
-  },
-  {
-    "id": 284054,
-    "title": "Black Panther",
-    "year": 2018,
-    "poster": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/xjDjIWPwcPUbiI4WJyBmB5byvXe.jpg"
-  },
-  {
-    "id": 299536,
-    "title": "Avengers: Infinity War",
-    "year": 2018,
-    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg"
-  },
-  {
-    "id": 299537,
     "title": "Captain Marvel",
-    "year": 2019,
-    "poster": "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/x2FJsf1ElAgr63Y3iLBaDPQZPF5.jpg"
+    "id": 299537,
+    "poster": "https://image.tmdb.org/t/p/original/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/bhzAR4GuGGICX6bomEblOfCW3Mu.jpg",
+    "mediaType": "movie"
   },
   {
-    "id": 299534,
-    "title": "Avengers: Endgame",
-    "year": 2019,
-    "poster": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg"
+    "title": "Iron Man",
+    "id": 1726,
+    "poster": "https://image.tmdb.org/t/p/original/3uiDUtTDNJpzbD84vHHERyHAya6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/dSiEOxFJM7D354lDv1zmVuoU5b0.jpg",
+    "mediaType": "movie"
   },
   {
-    "id": 429617,
-    "title": "Spider-Man: Far From Home",
-    "year": 2019,
-    "poster": "https://image.tmdb.org/t/p/w500/lvkRIhaDLPbzv4s0MlHhGZjGgAG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/6Hb7uJkffnTK6fBf8MdaeSvzhJt.jpg"
+    "title": "Iron Man 2",
+    "id": 10138,
+    "poster": "https://image.tmdb.org/t/p/original/1NHEyFPxKnsLdMuDVPy6AI7GRmE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/lsJ7Pg49OqX5mGtyIR4OezLYuAr.jpg",
+    "mediaType": "movie"
   },
   {
-    "id": 497698,
-    "title": "Black Widow",
-    "year": 2021,
-    "poster": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/vp1pc8KY4Nn0QpLydu8bpNMTb1a.jpg"
+    "title": "The Incredible Hulk",
+    "id": 1724,
+    "poster": "https://image.tmdb.org/t/p/original/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/wR4GzqocCucn0mgepqZ1JhzNuSI.jpg",
+    "mediaType": "movie"
   },
   {
-    "id": 566525,
-    "title": "Shang‑Chi and the Legend of the Ten Rings",
-    "year": 2021,
-    "poster": "https://image.tmdb.org/t/p/w500/923V5jxdBWQj2kc29HnGaAVJTKN.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/iVFTV0hWzSExY2ZMQi7faiJjZ6E.jpg"
-  },
-  {
-    "id": 524047,
-    "title": "Eternals",
-    "year": 2021,
-    "poster": "https://image.tmdb.org/t/p/w500/lKg7y3nPq18tFz8eV5O6QsNVuRP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg"
-  },
-  {
-    "id": 460458,
-    "title": "Spider-Man: No Way Home",
-    "year": 2021,
-    "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg"
-  },
-  {
-    "id": 453395,
-    "title": "Doctor Strange in the Multiverse of Madness",
-    "year": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/bVq65huQ8vHDd1a4BWz95ZC1i9F.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/9z4jRr43l7zd3j4v7lTsmK0P4IU.jpg"
-  },
-  {
-    "id": 616037,
-    "title": "Thor: Love and Thunder",
-    "year": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/pikCUXhH8a3Roq89EFkHWMBP0KI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4bzZCgpXjkWwUiw5oKCtxuZCnkD.jpg"
-  },
-  {
-    "id": 625904,
-    "title": "Black Panther: Wakanda Forever",
-    "year": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/ps2oKfhY6DL3alynlAlx4lhbIHm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/zn4BrGkMubPF5zj2zX6qcK0gJuo.jpg"
-  },
-  {
-    "id": 740952,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "year": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/ybYjZQ7byvMt2rtP15N0iWVDv2Y.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/v4Z7Bfk4hfPb8nz8CA8YwPLwfd.jpg"
-  },
-  {
-    "id": 376865,
-    "title": "Guardians of the Galaxy Vol. 3",
-    "year": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/k2slx6SwNAbb2OiwOz4X8B0y7hI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/abI2jaUdhpbaw3DUAhaN5shwIze.jpg"
-  },
-  {
-    "id": 632540,
-    "title": "The Marvels",
-    "year": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/5bzSgGH5LOvjRHQyebJxqpga5mb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/9kl4vY7q6jy0JY7sYqGcEQpLMHc.jpg"
-  },
-  {
-    "id": 476669,
-    "title": "Deadpool & Wolverine",
-    "year": 2024,
-    "poster": "https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/xndWFsBlClOJFRdhSt4hXBEl6HY.jpg"
-  },
-  {
-    "id": 406759,
-    "title": "Captain America: Brave New World",
-    "year": 2025,
-    "poster": "https://image.tmdb.org/t/p/w500/4SspX9gQy9jdJFQSqzmFfahTmZL.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4SspX9gQy9jdJFQSqzmFfahTmZL.jpg"
-  },
-  {
-    "id": 545611,
-    "title": "Thunderbolts*",
-    "year": 2025,
-    "poster": "https://image.tmdb.org/t/p/w500/9dKCd55IuTT5QRs989m9SzBmSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/5gDI4NFLpIkEHaV5wbTN0ADf2bI.jpg"
+    "title": "Thor",
+    "id": 10195,
+    "poster": "https://image.tmdb.org/t/p/original/4orbobSnGQrzxQvVz4n8jYnTxIO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/mptGxzWrePQgzba2uPpvp0SCWt.jpg",
+    "mediaType": "movie"
   }
 ]
