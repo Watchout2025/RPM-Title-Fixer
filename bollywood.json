@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Jewel Thief - The Heist Begins",
+    "id": 1225915,
+    "poster": "https://image.tmdb.org/t/p/original/eujLbO0kf1eqWC8XpHUJdtAVW2J.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/4i5a1LrLyQ3u9ER1i79HEzir9wj.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Dhoom Dhaam",
+    "id": 1201012,
+    "poster": "https://image.tmdb.org/t/p/original/2E7me3rPi8HqaeheuD86YlpNX6k.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/iXnc25WtP74nqlSdIXdq1h6RpgV.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Jaat",
+    "id": 1306845,
+    "poster": "https://image.tmdb.org/t/p/original/iV5rMrld86kNBWEy75Cjq8RRFaO.jpg",
+    "backdrop": "https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSt2IaxuCZ96lRiwoK4rPMdk6AmF-3Iflr7pB19R6KcPS7uG_IA1m5rhaKalac9Mjeh3AX4vD-l4aqaMLVSHiQvwn83J3Eyf1FjF-EBNhUtMjIcSB70eUuOoW0j4Q-rZ96gKPt8P3Uxd9WT1C80NLmrgXOGuvI5DmRM.webp?r=2dc",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Sikandar",
+    "id": 1257960,
+    "poster": "https://image.tmdb.org/t/p/original/41s42CRXafa3OuRGvCtfYPEBmse.jpg",
+    "backdrop": "https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ1EFFegCrj93OByBP8aQzqqdf52gOvi16Kz0YpmadW9pwZvZCTPSo0dJy4PgYUq5i1RPyz7ghu2kpjC_4CUpgAPCqKNw5NS2b4.webp?r=c09",
+    "mediaType": "movie"
+  },
+  {
+    "title": "The Diplomat",
+    "id": 1147546,
+    "poster": "https://image.tmdb.org/t/p/original/uwl9Y4px8TTIQK4N19k6gnW1RnX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/pHoqmbJ6fSKUHzGPlCoqMTurUhF.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Animal",
+    "id": 781732,
+    "poster": "https://image.tmdb.org/t/p/original/qilYankCYr3n2y2Alp7i0jV1NPe.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/A00YH4fClA0LqJJPK3hmIi2mzbF.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Fighter",
+    "id": 784651,
+    "poster": "https://image.tmdb.org/t/p/original/zqFuriKJ6pYDvf72kXNLONnuE8k.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/qd8ytNkiSk08SnjPYT1tIg0A43B.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Jawan",
+    "id": 872906,
+    "poster": "https://image.tmdb.org/t/p/original/mG8bIqJIr7CFSKJW8nAP17Lbc1s.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/qGJhiG86pJUISlui6XKsnbHg43v.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Jigra",
+    "id": 1184889,
+    "poster": "https://image.tmdb.org/t/p/original/lNo6sV7qVAB3sOGVBqqCR5a0nq4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/nIn6wUsRQN5ig2R5dIGWqMB7NQs.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Crew",
+    "id": 1045931,
+    "poster": "https://image.tmdb.org/t/p/original/8mnCtQngfhYt0W0BmkrCePutmvy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/qxKFCD58f33fczdxlsyqkYiPUaf.jpg",
+    "mediaType": "movie"
+  }
+]
