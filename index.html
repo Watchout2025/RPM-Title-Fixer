@@ -188,7 +188,7 @@
                 filesContainer.appendChild(fileItem); // Append the newly created file item
 
                 // Determine if the title needs fixing
-                const needsFix = file.title && (file.title.includes('-') ||file.title.includes('_') || file.title.includes(' ') || file.title.includes('?') || /MoviesMod(\.In|\.com)?/i.test(file.title) || /CinemaLuxe/i.test(file.title) || /Vegamovies(\.to|\.NL)?/i.test(file.title) || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || /BollYFlix/i.test(file.title) || /4kHdHub(\.Ms|\.Com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
+                const needsFix = file.title && (file.title.includes('-') ||file.title.includes('_') || file.title.includes(' ') || file.title.includes('?') || /MoviesVerse(\.Co|\.com)?/i.test(file.title) || /MoviesMod(\.In|\.com)?/i.test(file.title) || /CinemaLuxe/i.test(file.title) || /Vegamovies(\.to|\.NL)?/i.test(file.title) || /HDHub4u(\.Ms|\.com)?/i.test(file.title) || /BollYFlix/i.test(file.title) || /4kHdHub(\.Ms|\.Com)?/i.test(file.title) || sxxexxRegex.test(file.title) || bracketsRegex.test(file.title));
 
                 if (needsFix) {
                     titleElement.classList.add('highlight-red');
