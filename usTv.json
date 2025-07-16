@@ -1,0 +1,72 @@
+[
+  {
+    "title": "You ",
+    "id": 78191,
+    "poster": "https://image.tmdb.org/t/p/original/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/vbi27aCqd2NuHJoBiDqKYXOS2m5.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Never Have I Ever",
+    "id": 100883,
+    "poster": "https://image.tmdb.org/t/p/original/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/4yPfNmCbrokLuQsolaHs271p2Fj.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "The Walking Dead",
+    "id": 1402,
+    "poster": "https://image.tmdb.org/t/p/original/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/eUMwG5vXg4ovEUvXLAFgrr4bQvp.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Bet",
+    "id": 255779,
+    "poster": "https://image.tmdb.org/t/p/original/e3ENTAEDEO949khpVkJWgcWnwGG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/AlRebnGQo60CNJrM9bJdnddZmam.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "The Witcher",
+    "id": 71912,
+    "poster": "https://image.tmdb.org/t/p/original/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/irSbC2uCR0ni0DTtz6qKYZAPagN.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Cobra Kai",
+    "id": 77169,
+    "poster": "https://image.tmdb.org/t/p/original/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/mZTieenHNFppEnFwVGDe7JHG90V.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Bridgerton",
+    "id": 91239,
+    "poster": "https://image.tmdb.org/t/p/original/v2TL9tcfsFsFY1wM8rhwiQwo01t.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/uRiRwUYILexXlYBg39eaglOdgcl.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Suits",
+    "id": 37680,
+    "poster": "https://image.tmdb.org/t/p/original/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Lost in Space",
+    "id": 75758,
+    "poster": "https://image.tmdb.org/t/p/original/y8NJnTXzb4rio9uvVYFVrXEMofU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/yjhv31Vd0tIjLodej8CjwjxKDSM.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Wednesday",
+    "id": 119051,
+    "poster": "https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/vtY8EdA2yDWXCmkHcxLpvKniNKV.jpg",
+    "mediaType": "tv"
+  }
+]
