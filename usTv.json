@@ -1,5 +1,12 @@
 [
   {
+    "title": "Superstar",
+    "id": 243456,
+    "poster": "https://image.tmdb.org/t/p/w500/aZC1Z3OnknhYRMMCR8N1XwFVElG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/dhPQgvSAW2f5fQGHE5rFzkaugte.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Star Trek: Strange New Worlds",
     "id": 103516,
     "poster": "https://image.tmdb.org/t/p/original/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
