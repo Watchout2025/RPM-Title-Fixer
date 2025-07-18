@@ -1,5 +1,12 @@
 [
   {
+    "title": "Dr. STONE",
+    "id": 86031,
+    "poster": "https://image.tmdb.org/t/p/original/64DIVpWiGlvvJczMnyu8jojSYKm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/xPNVfbRHUn2Xs28uEEDXrNkWu0m.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Welcome to the Outcast's Restaurant!",
     "id": 286723,
     "poster": "https://image.tmdb.org/t/p/original/caWU2F1DSrrJgoJCSclpSoCWnge.jpg",
@@ -60,13 +67,6 @@
     "id": 240411,
     "poster": "https://image.tmdb.org/t/p/original/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/aQ6uUrVM6beU29tbybXN4oKcIJd.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "Dr. STONE",
-    "id": 86031,
-    "poster": "https://image.tmdb.org/t/p/original/64DIVpWiGlvvJczMnyu8jojSYKm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/xPNVfbRHUn2Xs28uEEDXrNkWu0m.jpg",
     "mediaType": "tv"
   },
   {
