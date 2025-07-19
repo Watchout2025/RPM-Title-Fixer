@@ -14,6 +14,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "The Bhootnii",
+    "id": 1054626,
+    "poster": "https://image.tmdb.org/t/p/w500/7hY958sJ5xfXSBS3hiBtMxpOqRK.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/foCFZLADroNnhn07aFRoijUKpC1.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Jewel Thief - The Heist Begins",
     "id": 1225915,
     "poster": "https://image.tmdb.org/t/p/original/eujLbO0kf1eqWC8XpHUJdtAVW2J.jpg",
