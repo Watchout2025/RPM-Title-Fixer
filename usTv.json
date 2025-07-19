@@ -1,5 +1,12 @@
 [
   {
+    "title": "Dexter: Resurrection",
+    "id": 259909,
+    "poster": "https://image.tmdb.org/t/p/w500/jSoRKtjlqQi9Hb1hmGQ8cbDnCbj.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3pbfqoAPIuP1ErUooA3H64kOr5d.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Superstar",
     "id": 243456,
     "poster": "https://image.tmdb.org/t/p/w500/aZC1Z3OnknhYRMMCR8N1XwFVElG.jpg",
