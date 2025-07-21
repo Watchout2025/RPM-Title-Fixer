@@ -2,43 +2,43 @@
   {
     "title": "Captain America: The First Avenger",
     "id": 1771,
-    "poster": "https://image.tmdb.org/t/p/original/erX60cjPX14MeQoV8y00IfMQP2a.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/cYlbgqeeKufdEdDoZQUyZsl11II.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/erX60cjPX14MeQoV8y00IfMQP2a.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/cYlbgqeeKufdEdDoZQUyZsl11II.jpg",
     "mediaType": "movie"
   },
   {
     "title": "Captain Marvel",
     "id": 299537,
-    "poster": "https://image.tmdb.org/t/p/original/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/bhzAR4GuGGICX6bomEblOfCW3Mu.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bhzAR4GuGGICX6bomEblOfCW3Mu.jpg",
     "mediaType": "movie"
   },
   {
     "title": "Iron Man",
     "id": 1726,
-    "poster": "https://image.tmdb.org/t/p/original/3uiDUtTDNJpzbD84vHHERyHAya6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/dSiEOxFJM7D354lDv1zmVuoU5b0.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/3uiDUtTDNJpzbD84vHHERyHAya6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/dSiEOxFJM7D354lDv1zmVuoU5b0.jpg",
     "mediaType": "movie"
   },
   {
     "title": "Iron Man 2",
     "id": 10138,
-    "poster": "https://image.tmdb.org/t/p/original/1NHEyFPxKnsLdMuDVPy6AI7GRmE.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/lsJ7Pg49OqX5mGtyIR4OezLYuAr.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/1NHEyFPxKnsLdMuDVPy6AI7GRmE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lsJ7Pg49OqX5mGtyIR4OezLYuAr.jpg",
     "mediaType": "movie"
   },
   {
     "title": "The Incredible Hulk",
     "id": 1724,
-    "poster": "https://image.tmdb.org/t/p/original/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/wR4GzqocCucn0mgepqZ1JhzNuSI.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/wR4GzqocCucn0mgepqZ1JhzNuSI.jpg",
     "mediaType": "movie"
   },
   {
     "title": "Thor",
     "id": 10195,
-    "poster": "https://image.tmdb.org/t/p/original/4orbobSnGQrzxQvVz4n8jYnTxIO.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/mptGxzWrePQgzba2uPpvp0SCWt.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/4orbobSnGQrzxQvVz4n8jYnTxIO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/mptGxzWrePQgzba2uPpvp0SCWt.jpg",
     "mediaType": "movie"
   }
 ]
