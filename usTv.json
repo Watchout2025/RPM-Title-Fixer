@@ -10,112 +10,112 @@
     "title": "Superstar",
     "id": 243456,
     "poster": "https://image.tmdb.org/t/p/w500/aZC1Z3OnknhYRMMCR8N1XwFVElG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/dhPQgvSAW2f5fQGHE5rFzkaugte.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/dhPQgvSAW2f5fQGHE5rFzkaugte.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Star Trek: Strange New Worlds",
     "id": 103516,
-    "poster": "https://image.tmdb.org/t/p/original/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/fEQbvO2gtPY2JFuFPZDp1qlGsCt.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/fEQbvO2gtPY2JFuFPZDp1qlGsCt.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Catalog",
     "id": 252125,
-    "poster": "https://image.tmdb.org/t/p/original/85NgPJnx2XbbTHTrdP3jfNaGz0Q.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/eJJK3xoZzVnOfZSXSG8cpu2MsyX.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/85NgPJnx2XbbTHTrdP3jfNaGz0Q.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/eJJK3xoZzVnOfZSXSG8cpu2MsyX.jpg",
     "mediaType": "tv"
   },
   {
     "title": "UNTAMED",
     "id": 248852,
-    "poster": "https://image.tmdb.org/t/p/original/wCJSNZcLT7EuKKW35my9VLmrkR7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/3dDn5GcoJhfJlb6W9ooINRkQxlo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/wCJSNZcLT7EuKKW35my9VLmrkR7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3dDn5GcoJhfJlb6W9ooINRkQxlo.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Countdown",
     "id": 256317,
-    "poster": "https://image.tmdb.org/t/p/original/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/cEG5ZSj4OXfZD3v3QaWKks5ZJb0.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/cEG5ZSj4OXfZD3v3QaWKks5ZJb0.jpg",
     "mediaType": "tv"
   },
   {
     "title": "The Summer I Turned Pretty",
     "id": 194766,
-    "poster": "https://image.tmdb.org/t/p/original/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
     "mediaType": "tv"
   },
   {
     "title": "You ",
     "id": 78191,
-    "poster": "https://image.tmdb.org/t/p/original/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/vbi27aCqd2NuHJoBiDqKYXOS2m5.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/vbi27aCqd2NuHJoBiDqKYXOS2m5.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Never Have I Ever",
     "id": 100883,
-    "poster": "https://image.tmdb.org/t/p/original/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4yPfNmCbrokLuQsolaHs271p2Fj.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/4yPfNmCbrokLuQsolaHs271p2Fj.jpg",
     "mediaType": "tv"
   },
   {
     "title": "The Walking Dead",
     "id": 1402,
-    "poster": "https://image.tmdb.org/t/p/original/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/eUMwG5vXg4ovEUvXLAFgrr4bQvp.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/eUMwG5vXg4ovEUvXLAFgrr4bQvp.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Bet",
     "id": 255779,
-    "poster": "https://image.tmdb.org/t/p/original/e3ENTAEDEO949khpVkJWgcWnwGG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/AlRebnGQo60CNJrM9bJdnddZmam.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/e3ENTAEDEO949khpVkJWgcWnwGG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AlRebnGQo60CNJrM9bJdnddZmam.jpg",
     "mediaType": "tv"
   },
   {
     "title": "The Witcher",
     "id": 71912,
-    "poster": "https://image.tmdb.org/t/p/original/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/irSbC2uCR0ni0DTtz6qKYZAPagN.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/irSbC2uCR0ni0DTtz6qKYZAPagN.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Cobra Kai",
     "id": 77169,
-    "poster": "https://image.tmdb.org/t/p/original/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/mZTieenHNFppEnFwVGDe7JHG90V.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/mZTieenHNFppEnFwVGDe7JHG90V.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Bridgerton",
     "id": 91239,
-    "poster": "https://image.tmdb.org/t/p/original/v2TL9tcfsFsFY1wM8rhwiQwo01t.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/uRiRwUYILexXlYBg39eaglOdgcl.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/v2TL9tcfsFsFY1wM8rhwiQwo01t.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/uRiRwUYILexXlYBg39eaglOdgcl.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Suits",
     "id": 37680,
-    "poster": "https://image.tmdb.org/t/p/original/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Lost in Space",
     "id": 75758,
-    "poster": "https://image.tmdb.org/t/p/original/y8NJnTXzb4rio9uvVYFVrXEMofU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/yjhv31Vd0tIjLodej8CjwjxKDSM.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/y8NJnTXzb4rio9uvVYFVrXEMofU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/yjhv31Vd0tIjLodej8CjwjxKDSM.jpg",
     "mediaType": "tv"
   },
   {
     "title": "Wednesday",
     "id": 119051,
-    "poster": "https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/vtY8EdA2yDWXCmkHcxLpvKniNKV.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/vtY8EdA2yDWXCmkHcxLpvKniNKV.jpg",
     "mediaType": "tv"
   }
 ]
