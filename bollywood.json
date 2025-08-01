@@ -1,5 +1,19 @@
 [
   {
+    "title": "Son of Sardaar 2",
+    "id": 1311649,
+    "poster": "https://image.tmdb.org/t/p/w500/wsyhCk0tkNLxnHJk0UAct3JgfZQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ec8YEO7uwegbk0Wv15QdPzoPsZp.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Dhadak 2",
+    "id": 1213777,
+    "poster": "https://image.tmdb.org/t/p/w500/s3o23GbRXvHPPRm50kqQjjjCoKP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/t3E3eSY0oZK6DduUrnWGgTx8bSs.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Saiyaara",
     "id": 1241634,
     "poster": "https://image.tmdb.org/t/p/w500/jymezcmEcFvlb037V4SSx8a4SMq.jpg",
