@@ -7,6 +7,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "M3GAN 2.0",
+    "id": 1071585,
+    "poster": "https://image.tmdb.org/t/p/w500/4a63rQqIDTrYNdcnTXdPsQyxVLo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ok6h85su874ANLaqJNJgTj0CUCv.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Pretty Thing",
     "id": 1223690,
     "poster": "https://image.tmdb.org/t/p/w500/xWVbtqUvuhAOYzkZV6YDQOnN5fQ.jpg",
