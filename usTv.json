@@ -1,5 +1,12 @@
 [
   {
+    "title": "Star Trek: Strange New Worlds",
+    "id": 103516,
+    "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/fEQbvO2gtPY2JFuFPZDp1qlGsCt.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Chief of War",
     "id": 196890,
     "poster": "https://image.tmdb.org/t/p/w500/8Mckh3qJRTzXTQNZtpb133RHmO4.jpg",
@@ -39,13 +46,6 @@
     "id": 243456,
     "poster": "https://image.tmdb.org/t/p/w500/aZC1Z3OnknhYRMMCR8N1XwFVElG.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/dhPQgvSAW2f5fQGHE5rFzkaugte.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "Star Trek: Strange New Worlds",
-    "id": 103516,
-    "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/fEQbvO2gtPY2JFuFPZDp1qlGsCt.jpg",
     "mediaType": "tv"
   },
   {
