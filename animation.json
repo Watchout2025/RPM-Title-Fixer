@@ -1,5 +1,12 @@
 [
   {
+    "title": "Snoopy Presents: A Summer Musical",
+    "id": 1484453,
+    "poster": "https://image.tmdb.org/t/p/w500/kK1ugxST3tCJZjZEO37sLb4Yot5.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/gDgItWmhsWedhM89EXcjjpwicVP.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Elio",
     "id": 1022787,
     "poster": "https://image.tmdb.org/t/p/w500/w2ARwtc1zoh0pyfwmyhpZHwuXgK.jpg",
