@@ -1,5 +1,12 @@
 [
   {
+    "title": "WWE NXT",
+    "id": 31991,
+    "poster": "https://image.tmdb.org/t/p/w500/gOBPOGBMJjxNZ6oc8rk572ma2It.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/sUKOcZizPcAIMbwbZr0tgY6UDPp.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "WWE: Unreal",
     "id": 289485,
     "poster": "https://image.tmdb.org/t/p/w500/4wfySL6AUTwXRCiL6tumMq9oFam.jpg",
@@ -11,13 +18,6 @@
     "id": 4656,
     "poster": "https://image.tmdb.org/t/p/w500/j9bmKTaJ3D72btEdjm8prBCyhng.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/dzexW1LJMC5w4oqG2XxUTcGMhL5.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "WWE NXT",
-    "id": 31991,
-    "poster": "https://image.tmdb.org/t/p/w500/gOBPOGBMJjxNZ6oc8rk572ma2It.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/sUKOcZizPcAIMbwbZr0tgY6UDPp.jpg",
     "mediaType": "tv"
   },
   {
