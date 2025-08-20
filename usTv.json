@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Summer I Turned Pretty",
+    "id": 194766,
+    "poster": "https://image.tmdb.org/t/p/w500/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Fatal Seduction",
     "id": 227975,
     "poster": "https://image.tmdb.org/t/p/w500/1REi7v1NmTxI8YODX7lwLF70zIs.jpg",
@@ -95,13 +102,6 @@
     "id": 256317,
     "poster": "https://image.tmdb.org/t/p/w500/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/cEG5ZSj4OXfZD3v3QaWKks5ZJb0.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "The Summer I Turned Pretty",
-    "id": 194766,
-    "poster": "https://image.tmdb.org/t/p/w500/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
     "mediaType": "tv"
   },
   {
