@@ -1,8 +1,15 @@
 [
   {
+    "title": "Hostage",
+    "id": 248937,
+    "poster": "https://image.tmdb.org/t/p/w300/7LtQDzAjnwUTLQjHenou7D8DoFs.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/6SEWFhvhRzkTc2oylIIdTpqTose.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "The Summer I Turned Pretty",
     "id": 194766,
-    "poster": "https://image.tmdb.org/t/p/w500/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
+    "poster": "https://image.tmdb.org/t/p/w300/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
     "mediaType": "tv"
   },
