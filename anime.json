@@ -1,5 +1,12 @@
 [
    {
+    "title": "Welcome to the Outcast's Restaurant!",
+    "id": 286723,
+    "poster": "https://image.tmdb.org/t/p/w500/caWU2F1DSrrJgoJCSclpSoCWnge.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/yetn3Q9AaNeDg15FYo6BBfUUlss.jpg",
+    "mediaType": "tv"
+  },
+   {
     "title": "Death Note",
     "id": 13916,
     "poster": "https://image.tmdb.org/t/p/w300/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
@@ -46,13 +53,6 @@
     "id": 86031,
     "poster": "https://image.tmdb.org/t/p/w500/64DIVpWiGlvvJczMnyu8jojSYKm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/xPNVfbRHUn2Xs28uEEDXrNkWu0m.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "Welcome to the Outcast's Restaurant!",
-    "id": 286723,
-    "poster": "https://image.tmdb.org/t/p/w500/caWU2F1DSrrJgoJCSclpSoCWnge.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/yetn3Q9AaNeDg15FYo6BBfUUlss.jpg",
     "mediaType": "tv"
   },
   {
