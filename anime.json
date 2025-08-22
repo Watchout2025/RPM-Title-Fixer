@@ -1,5 +1,12 @@
 [
    {
+    "title": "YAIBA: Samurai Legend",
+    "id": 254017,
+    "poster": "https://image.tmdb.org/t/p/w500/cxD3FQP4hDU5hSABwdQCvGrrnz6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lvKe26n1VGaRLWsTUkTpnYjapnE.jpg",
+    "mediaType": "tv"
+  },
+   {
     "title": "Welcome to the Outcast's Restaurant!",
     "id": 286723,
     "poster": "https://image.tmdb.org/t/p/w500/caWU2F1DSrrJgoJCSclpSoCWnge.jpg",
@@ -74,13 +81,6 @@
     "id": 88046,
     "poster": "https://image.tmdb.org/t/p/w500/Alx1QJZeiweoM0ZVSnJ7PnuqPQx.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/yt56fH1cReWaotMpoq0HmE1Togp.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "YAIBA: Samurai Legend",
-    "id": 254017,
-    "poster": "https://image.tmdb.org/t/p/w500/cxD3FQP4hDU5hSABwdQCvGrrnz6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/lvKe26n1VGaRLWsTUkTpnYjapnE.jpg",
     "mediaType": "tv"
   },
   {
