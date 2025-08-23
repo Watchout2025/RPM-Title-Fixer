@@ -1,5 +1,12 @@
 [
    {
+    "title": "Kaiju No. 8",
+    "id": 207468,
+    "poster": "https://image.tmdb.org/t/p/w500/bJxGs0w5RAhaX4fIUQu511rvm0S.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/kMMFY8gE3HHt5TmzF55jY7I3Fjs.jpg",
+    "mediaType": "tv"
+  },
+   {
     "title": "YAIBA: Samurai Legend",
     "id": 254017,
     "poster": "https://image.tmdb.org/t/p/w500/cxD3FQP4hDU5hSABwdQCvGrrnz6.jpg",
@@ -39,13 +46,6 @@
     "id": 258348,
     "poster": "https://image.tmdb.org/t/p/w500/31I6eGFgYbbn5FMwzxOVlZfYETW.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/UErKAycnzSAJqGvJpSy0tw5auS.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "Kaiju No. 8",
-    "id": 207468,
-    "poster": "https://image.tmdb.org/t/p/w500/bJxGs0w5RAhaX4fIUQu511rvm0S.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/kMMFY8gE3HHt5TmzF55jY7I3Fjs.jpg",
     "mediaType": "tv"
   },
   {
