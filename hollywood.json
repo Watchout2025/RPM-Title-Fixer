@@ -1,5 +1,12 @@
 [
   {
+    "title": "Superman",
+    "id": 1061474,
+    "poster": "https://image.tmdb.org/t/p/w300/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/HQorbRuFTBlTbV6stD8FrvERso.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Fall for Me",
     "id": 1300116,
     "poster": "https://image.tmdb.org/t/p/w300/1pvEnsZTaNYLKI0ggeXlhMrTLlV.jpg",
