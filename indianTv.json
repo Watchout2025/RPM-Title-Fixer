@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bigg Boss",
+    "id": 11436,
+    "poster": "https://image.tmdb.org/t/p/w500/xVjvkjuDUQfCjrTJ1e4mpFyD2wH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/1bc7UpjVorkjcuzeBjuTqUjXT8B.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "CID",
     "id": 15226,
     "poster": "https://image.tmdb.org/t/p/w300/26uEr3docGiJVEDlqepAjf99Vlq.jpg",
