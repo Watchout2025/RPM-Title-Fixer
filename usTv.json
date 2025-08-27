@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Summer I Turned Pretty",
+    "id": 194766,
+    "poster": "https://image.tmdb.org/t/p/w300/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "The Terminal List: Dark Wolf",
     "id": 219760,
     "poster": "https://image.tmdb.org/t/p/w500/9mYeRoWguq5etbwJRdF8BXFKiF.jpg",
@@ -25,13 +32,6 @@
     "id": 248937,
     "poster": "https://occ-0-8377-2567.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWUxBY_WZnmjeg6okNdEPComgwoBKKsoHDDAh2M8zoOBpCM5fqTb4oKfZDGUQSGGV6aFpOcZNeheW5qifCDSPNSIsja5MdlwFc394KldF_M4A6hBkpKfVaDk4yeotxjHYcFZP3zXtFBrorjzDK6UbYhpGbqYG_bKgKl0CW1_U1P44kZNsXs9_jnu2vftqh6qNt1SeQE9aw.jpg?r=115",
     "backdrop": "https://image.tmdb.org/t/p/original/7MrFQ0rYORU6MtI9mFE1Pq9aH8c.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "The Summer I Turned Pretty",
-    "id": 194766,
-    "poster": "https://image.tmdb.org/t/p/w300/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
     "mediaType": "tv"
   },
   {
