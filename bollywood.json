@@ -7,6 +7,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "Songs of Paradise",
+    "id": 1238198,
+    "poster": "https://image.tmdb.org/t/p/w500/bnfP3bX21VC536U9vdzDDWQM3pH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/6Rzc5iXP6iUTxkGhcMlslDyNfBO.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Maalik",
     "id": 1312559,
     "poster": "https://image.tmdb.org/t/p/w300/oPVGirCIWzTWx62eZpT48fml842.jpg",
