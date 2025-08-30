@@ -1,5 +1,12 @@
 [
   {
+    "title": "Maargan",
+    "id": 1425641,
+    "poster": "https://image.tmdb.org/t/p/w500/sgNetedu19Ar9LkUXGNheh9NL1D.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/xbVW0b4EduWaYVgSR2m4C7CFxge.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "3BHK",
     "id": 1293849,
     "poster": "https://image.tmdb.org/t/p/w500/njq3p81KoTVd0lWqGeudId7WwUn.jpg",
