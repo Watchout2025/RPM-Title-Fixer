@@ -7,6 +7,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "Inspector Zende",
+    "id": 1404864,
+    "poster": "https://image.tmdb.org/t/p/w500/uY6xBuKMDMFNQHhGdlEU1NP4gYO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/oBE3iS5umOBY8nZNafZ2UJDja6B.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Param Sundari",
     "id": 1226354,
     "poster": "https://image.tmdb.org/t/p/w500/uLPUsH3Fwe6mAU7n6WpMSDLdYCm.jpg",
