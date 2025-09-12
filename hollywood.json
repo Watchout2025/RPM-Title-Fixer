@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Ritual",
+    "id": 1278950,
+    "poster": "https://image.tmdb.org/t/p/w500/uubL8yvtEBjz3V7DFQHjCuSQO8w.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/arwV1cXKfC1ugxYPpvthaqH1Z6q.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Nobody 2",
     "id": 1007734,
     "poster": "https://image.tmdb.org/t/p/w500/svXVRoRSu6zzFtCzkRsjZS7Lqpd.jpg",
