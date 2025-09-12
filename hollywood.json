@@ -7,6 +7,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "McWalter",
+    "id": 1301072,
+    "poster": "https://image.tmdb.org/t/p/w500/93XDwOGPFh4HJEMmOSSrWL29tOM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lB1LhdJMZZxy4IYmLcqrRGsw19U.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "The Ritual",
     "id": 1278950,
     "poster": "https://image.tmdb.org/t/p/w500/uubL8yvtEBjz3V7DFQHjCuSQO8w.jpg",
