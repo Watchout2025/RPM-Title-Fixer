@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Summer I Turned Pretty",
+    "id": 194766,
+    "poster": "https://image.tmdb.org/t/p/w300/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Maledictions",
     "id": 261617,
     "poster": "https://image.tmdb.org/t/p/w500/nXze4Ya0DhcnF3qeypE0b7X1DZ5.jpg",
@@ -39,13 +46,6 @@
     "id": 256317,
     "poster": "https://image.tmdb.org/t/p/w500/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/cEG5ZSj4OXfZD3v3QaWKks5ZJb0.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "The Summer I Turned Pretty",
-    "id": 194766,
-    "poster": "https://image.tmdb.org/t/p/w300/s85u6WqkfkVBOrWDMKrefnU1g1n.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/bWOLnvEXYytz0V91nZFYdpiXQ2M.jpg",
     "mediaType": "tv"
   },
   {
