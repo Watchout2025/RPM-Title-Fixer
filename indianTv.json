@@ -7,20 +7,6 @@
     "mediaType": "tv"
   },
   {
-    "title": "Do You Wanna Partner",
-    "id": 249767,
-    "poster": "https://image.tmdb.org/t/p/w500/desoUeji3c4EDvSsDOoi7OEKH1a.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/7Vdecbc013r7RamA1RQ1prBtp8r.jpg",
-    "mediaType": "tv"
-  },
-  {
-    "title": "Bigg Boss",
-    "id": 11436,
-    "poster": "https://image.tmdb.org/t/p/w500/xVjvkjuDUQfCjrTJ1e4mpFyD2wH.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/1bc7UpjVorkjcuzeBjuTqUjXT8B.jpg",
-    "mediaType": "tv"
-  },
-  {
     "title": "CID",
     "id": 15226,
     "poster": "https://image.tmdb.org/t/p/w300/26uEr3docGiJVEDlqepAjf99Vlq.jpg",
@@ -32,6 +18,20 @@
     "id": 247769,
     "poster": "https://occ-0-7397-1500.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABXU1oV4emACOaAqUSc3-zLl3qS-WFNAc67TMdGt9oPPgyV0eW54m7VtxxwrWpr3piNT9xG49FnJJACS03a5NolB9O2GZ0M_cBpZ2VOUO13plLHSla_ulCw5s_beun9kIddZwAdj2lxyNApMxS_M-RqH1-3du92vCi0QE4MeUd-E83z_BVnwOmtcQ7mOhIdk0v3nRvVG2TT3Sw-5XrhTqkNSMVSmev6WGID_GqIxeKWYXRiL_DAOIDHmf20IC0sTn9jrsMZcH-MknCMxCHiGjqO617BT2CVQb02AFgXuLgvr5Vrgg39R3GZYP1LKXpgWeV5D0HiYPwDp_sxUkS0f8BiUR27oxRtEYH2T6wYbK5hmf7WkG204S6e_ul3Kld8AV6f633c8Cz7XjoJT8sXvMuWms50HKiNuAD5mqkduh40gMwWJMWwsJc41DV0B3IGDC4CSqzwUqYg.jpg?r=1b9",
     "backdrop": "https://image.tmdb.org/t/p/original/jkbj1i4KDoYLO7PP0NCZRsSvP0d.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Do You Wanna Partner",
+    "id": 249767,
+    "poster": "https://image.tmdb.org/t/p/w500/desoUeji3c4EDvSsDOoi7OEKH1a.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/7Vdecbc013r7RamA1RQ1prBtp8r.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Bigg Boss",
+    "id": 11436,
+    "poster": "https://image.tmdb.org/t/p/w500/xVjvkjuDUQfCjrTJ1e4mpFyD2wH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/1bc7UpjVorkjcuzeBjuTqUjXT8B.jpg",
     "mediaType": "tv"
   },
   {
