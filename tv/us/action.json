@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Wolf King",
+    "id": 231727,
+    "poster": "https://occ-0-7394-185.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQgu_ZAQCKcPDUvtGnjqtn9-3FtNZOOpGLX-SJatg24JOICeIMbrvyNgAa0xxWBkNhhS-jwiznCDj9otc1we81b09sfoJcgshBr_FGnf12PgL1972cvFBJmQljNhLs23GT5m-S9LFX9trCjsPzvFgJA3xrHUI3PV6cjhBsw76oADbZxLtDVD7R-GExt3PUIBJRLvhFubwkijrKc9meRrSFGskpMMJxJy_U-zXdGdcwVMTfT157Sf9yLilpOTqwxfTk7y_oX9m1I0es4top9ETCTbeqdkivAfbirL1gecyVYMSJnEPOxhs9I.jpg?r=b75",
+    "backdrop": "https://image.tmdb.org/t/p/original/jxMGYoHzPt0dcg3DUZp91fpmwkI.jpg",
+    "mediaType": "tv"
+  },
+  {
+    "title": "Ne Zha 2",
+    "id": 980477,
+    "poster": "https://image.tmdb.org/t/p/w300/293Mo4GWf7Tl0TfAr5NFghqeMy7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rGHNPAdxdQ6UlZ6nltvux6INjJX.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "The Bad Guys 2",
+    "id": 1175942,
+    "poster": "https://image.tmdb.org/t/p/w500/26oSPnq0ct59l07QOXZKyzsiRtN.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rFeqEBKgaOe8vTzT3r7pYGl2uni.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Snoopy Presents: A Summer Musical",
+    "id": 1484453,
+    "poster": "https://image.tmdb.org/t/p/w500/kK1ugxST3tCJZjZEO37sLb4Yot5.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/gDgItWmhsWedhM89EXcjjpwicVP.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Elio",
+    "id": 1022787,
+    "poster": "https://image.tmdb.org/t/p/w500/w2ARwtc1zoh0pyfwmyhpZHwuXgK.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AscKS9voEApoxfCVlN4BJiX6vvN.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "KPop Demon Hunters",
+    "id": 803796,
+    "poster": "https://image.tmdb.org/t/p/w500/43c1efKzA1kigNzY0HBzeoXp8LR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3aZHMVeLb5z7iHIGyF0tbA1yZJZ.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Lulu Is a Rhinoceros",
+    "id": 1465476,
+    "poster": "https://image.tmdb.org/t/p/w500/h6cxDZb5JRzaMZP37AfGPlHfCnm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jF0k25zMzPpHnJIK5bvqC6oSx8J.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Lost in Starlight",
+    "id": 1165642,
+    "poster": "https://image.tmdb.org/t/p/w500/6RDXvT0C9Mvm5FNHGThn4iP8xKH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/keQZPgy44NV3bGV88gfIuyvQBqY.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Dog Man",
+    "id": 774370,
+    "poster": "https://image.tmdb.org/t/p/w500/89wNiexZdvLQ41OQWIsQy4O6jAQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lSFZhUBsKx08VQxSUZ0zP73bM1a.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Moana 2",
+    "id": 1241982,
+    "poster": "https://image.tmdb.org/t/p/w500/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/5CAf9N4EfFYBJQPh3J4cbJxM088.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Plankton: The Movie",
+    "id": 1104845,
+    "poster": "https://image.tmdb.org/t/p/w500/hGaUNLF5VZbg9ovPTyjm9Rv5xWz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/tTl2ALfRgSPboYmdxITJHkZFwl0.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "Mufasa: The Lion King",
+    "id": 762509,
+    "poster": "https://image.tmdb.org/t/p/w500/jbOSUAWMGzGL1L4EaUF8K6zYFo7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/klXVlcNFq3TnQ8AKCkGM9WMkxyu.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "The Witcher: Sirens of the Deep",
+    "id": 1203329,
+    "poster": "https://image.tmdb.org/t/p/w500/y0pR5aBVvPn5uncaZjl94ZEnuEF.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/4YV5FjWJOrwU5cOOrNAsyfMv194.jpg",
+    "mediaType": "movie"
+  }
+]
