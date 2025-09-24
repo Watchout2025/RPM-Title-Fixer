@@ -1,5 +1,12 @@
 [
   {
+    "title": "Hotel Costiera",
+    "id": 247662,
+    "poster": "https://image.tmdb.org/t/p/w500/biWik6unl9bLfpJVCNvjso2GhAE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3mCp14plnJZNhl71Syu2OK1b8Ga.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "The Guest",
     "id": 272265,
     "poster": "https://image.tmdb.org/t/p/w500/amPFS0P9eZSgu23mmNTZS8cpnHF.jpg",
