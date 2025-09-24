@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Cut",
+    "id": 1215798,
+    "poster": "https://image.tmdb.org/t/p/w500/6iseyProRsPyu3rOCzsXDDnDGrl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ux2EeN4DYblo4AbUUWcWuZqBnaP.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Splitsville",
     "id": 1337562,
     "poster": "https://image.tmdb.org/t/p/w500/gxCv6kUdywxYzIXX6xYcmX5APUV.jpg",
