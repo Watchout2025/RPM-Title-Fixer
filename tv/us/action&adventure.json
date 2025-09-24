@@ -1,5 +1,12 @@
 [
   {
+    "title": "Hotel Costiera",
+    "id": 247662,
+    "poster": "https://image.tmdb.org/t/p/w500/biWik6unl9bLfpJVCNvjso2GhAE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3mCp14plnJZNhl71Syu2OK1b8Ga.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "Gen V",
     "id": 205715,
     "poster": "https://image.tmdb.org/t/p/w500/tEv842Nd5uMSavURG4aQO1pNtst.jpg",
@@ -12,12 +19,5 @@
     "poster": "https://image.tmdb.org/t/p/w500/xKnUNWFsAOaKIviIYBLei02Bauu.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/lYei47z8Fv4SFumikAyNyfYw3hF.jpg",
     "mediaType": "tv"
-  },
-  {
-    "title": "Wolf King",
-    "id": 231727,
-    "poster": "https://occ-0-7394-185.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQgu_ZAQCKcPDUvtGnjqtn9-3FtNZOOpGLX-SJatg24JOICeIMbrvyNgAa0xxWBkNhhS-jwiznCDj9otc1we81b09sfoJcgshBr_FGnf12PgL1972cvFBJmQljNhLs23GT5m-S9LFX9trCjsPzvFgJA3xrHUI3PV6cjhBsw76oADbZxLtDVD7R-GExt3PUIBJRLvhFubwkijrKc9meRrSFGskpMMJxJy_U-zXdGdcwVMTfT157Sf9yLilpOTqwxfTk7y_oX9m1I0es4top9ETCTbeqdkivAfbirL1gecyVYMSJnEPOxhs9I.jpg?r=b75",
-    "backdrop": "https://image.tmdb.org/t/p/original/jxMGYoHzPt0dcg3DUZp91fpmwkI.jpg",
-    "mediaType": "tv"
-  },
+  }
 ]
