@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Cut",
+    "id": 1215798,
+    "poster": "https://image.tmdb.org/t/p/w500/6iseyProRsPyu3rOCzsXDDnDGrl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ux2EeN4DYblo4AbUUWcWuZqBnaP.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "The Home",
     "id": 926606,
     "poster": "https://image.tmdb.org/t/p/w500/qyGY1k5GqAORsVhfZA3gFKirZWD.jpg",
