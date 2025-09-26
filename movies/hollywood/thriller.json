@@ -1,5 +1,12 @@
 [
   {
+    "title": "All the Devils Are Here (2025)",
+    "id": 1530875,
+    "poster": "https://image.tmdb.org/t/p/w500/2Acrt6eCQjgP6Whc941F6q9IDk4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/mwI9CuoEbYX5lkxSzhNUOMcYEf1.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Mom (2025)",
     "id": 729713,
     "poster": "https://image.tmdb.org/t/p/w500/2830dGe0I5KNBf2VT9h4iKHZQIS.jpg",
@@ -26,5 +33,5 @@
     "poster": "https://image.tmdb.org/t/p/w500/oQJ1PKLIE2gF5cr3xwjLCvv4jcU.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/nCRJHzhwE96cvH7VYyIdgI2gqKO.jpg",
     "mediaType": "movie"
-  },
+  }
 ]
