@@ -1,5 +1,12 @@
 [
   {
+    "title": "Son of Sardaar 2",
+    "id": 1311649,
+    "poster": "https://image.tmdb.org/t/p/w500/wsyhCk0tkNLxnHJk0UAct3JgfZQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ec8YEO7uwegbk0Wv15QdPzoPsZp.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Mahavatar Narsimha",
     "id": 1383072,
     "poster": "https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABb9_MYN2DYF7Hz0UsE6VLngdO0xynnOcSR68kF6ni3WbPlPoRo-tGVwo_CMRsLvccOy9zM--ijIDykGwI6YNOnOgiYhjY4Sg8Q0Cxzn5rPdvPZig64BEVHnwOnTO5w-oW-94d0LWLXzuOZ_Tygwud7v0ZwSmhV0eynmUYHexpvmVHA.jpg?r=33a",
@@ -95,13 +102,6 @@
     "id": 1109086,
     "poster": "https://image.tmdb.org/t/p/w500/2Yc8Kl2ldPpDzLrG2M5Ddv62FXB.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/eBalwiE9sRWNaZQ3Bwjx2jNaChv.jpg",
-    "mediaType": "movie"
-  },
-  {
-    "title": "Son of Sardaar 2",
-    "id": 1311649,
-    "poster": "https://image.tmdb.org/t/p/w500/wsyhCk0tkNLxnHJk0UAct3JgfZQ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/ec8YEO7uwegbk0Wv15QdPzoPsZp.jpg",
     "mediaType": "movie"
   },
   {
