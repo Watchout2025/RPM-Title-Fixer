@@ -1,9 +1,16 @@
 [
   {
+    "title": "All the Devils Are Here (2025)",
+    "id": 1530875,
+    "poster": "https://image.tmdb.org/t/p/w500/2Acrt6eCQjgP6Whc941F6q9IDk4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/mwI9CuoEbYX5lkxSzhNUOMcYEf1.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "Adulthood",
     "id": 1083420,
     "poster": "https://image.tmdb.org/t/p/w500/a40Gi0Zq4Ecqu3obmOp6TSgEne1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/3Lp5xEhh6dQUaUuyseWqsCL9UMK.jpg",
     "mediaType": "movie"
-  },
+  }
 ]
