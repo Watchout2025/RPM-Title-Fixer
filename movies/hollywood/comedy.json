@@ -1,5 +1,12 @@
 [
   {
+    "title": "Code 3 (2025)",
+    "id": 1161617,
+    "poster": "https://image.tmdb.org/t/p/w500/gIAYMDb5mIAeCAj76q1sRsKjkzo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rkIg1WADtXMXfmOnmksSRnQtuDg.jpg",
+    "mediaType": "movie"
+  },
+  {
     "title": "French Lover (2025)",
     "id": 1289888,
     "poster": "https://occ-0-3947-2567.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABa1N4lUF8zQ2b3-4RKwktRTIUHCWP-JWimelSvNe6mxEkZiN55305IStG6zhObZ1IphtAQHbT8hwUnDRRcuRC9VNZPYmiVfbKr6XOJK8Doz6zHsWkDDkauiEZoWl-lTzDUsTjUogayTDmYmMKuNJMlF6BpLpLbothLGxmDXNIckiPRgx-4xQBcXoWChbsw4H2X11q_o.jpg?r=ad4",
@@ -26,5 +33,5 @@
     "poster": "https://image.tmdb.org/t/p/w500/a40Gi0Zq4Ecqu3obmOp6TSgEne1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/3Lp5xEhh6dQUaUuyseWqsCL9UMK.jpg",
     "mediaType": "movie"
-  },
+  }
 ]
