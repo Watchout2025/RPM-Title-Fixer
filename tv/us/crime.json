@@ -1,9 +1,16 @@
 [
   {
+    "title": "Monster: The Ed Gein Story (2025)",
+    "id": 286801,
+    "poster": "https://image.tmdb.org/t/p/w500/iDHzRALtZCzHVmx7uyjTTKvMAPB.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/9kEIibz7t3c9KFKSk3GhhX4xqC0.jpg",
+    "mediaType": "tv"
+  },
+  {
     "title": "The Guest",
     "id": 272265,
     "poster": "https://image.tmdb.org/t/p/w500/amPFS0P9eZSgu23mmNTZS8cpnHF.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/eE5BKPOwcRMf8ack4eTeT5Smbem.jpg",
     "mediaType": "tv"
-  },
+  }
 ]
