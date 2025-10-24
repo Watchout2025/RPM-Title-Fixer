@@ -1,9 +1,16 @@
 [
   {
+    "title": "A House of Dynamite (2025)",
+    "id": 1290159,
+    "poster": "https://occ-0-8325-2567.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfwXTwod9LmpBqnO33rRMZ0sL4ZTED9n3sK0-x_OZSEQ48CifATvFKfhq_blUMJq3aEiyBWIgkvN81zq14jAdGQzc-_CRRF4VYWPcGkBk6k5kPXDib4oPKsqQY1h6LpWNm8fd0j_p3-xNh6Ar3uM95fOp6T9_gjapLjLRRYJ--E.jpg?r=bc4",
+    "backdrop": "https://occ-0-8325-2567.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQpfrMB2kGlYIlhV-XxOZEGRW1XdFtb7-0FpoR9_gNOkFvkNCMe4fFkkXUy4vn5aI-aZC6ZX9ijCf8qLZ6gyb6Fr748Czc6PQoJyFQWhQhwtBIgpFBgpSJECLrZnbAhNplKqBZPuDOZ6ccbTtMm_4otFiP7azGJKF8bgmxdYZH-CFg.jpg?r=977",
+    "mediaType": "movie"
+  },
+  {
     "title": "Primitive War (2025)",
     "id": 1257009,
     "poster": "https://image.tmdb.org/t/p/w500/egDAs0vh2SzTR07eUzdcC1XYkTS.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/skDJUjyZWxE4a1n9wWXsFzTa3E4.jpg",
     "mediaType": "movie"
-  },
+  }
 ]
