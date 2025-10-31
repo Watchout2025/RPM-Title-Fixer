@@ -1,9 +1,9 @@
 [
   {
-    "title": "They Call Him OG (2025)",
-    "id": 1080365,
-    "poster": "https://occ-0-7398-2774.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRb2E3gtAnDqlstu-VAAt-sGVFRVW8XykL-cdFJX4LnFRAmIC3sZ6UcFopKu-jzIYvRVtZW-J5n1OEW5qZuxMs0ASU01A9UsK2ryTmzeBE3fJIwjQfzKOi4kwMAJXDw9JhNEJh2WbNujb-ke9fAHdEWpQlzW3t3MkpRYY2JO84c9BQ.jpg?r=00a",
-    "backdrop": "https://occ-0-7398-2774.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfQy8FVGeYRhLMb3yBKT0UsHX9Mnbr1siP44tllVtvMKmMWCmuJMvZr6SfrcdQJ-sqe-mxJBrk995Jo4HyvPMtFIWST0eC9RGTtX68ij0AGOtFfQGJ25j6I2FsXwlvTb-IEJ_MQ03l8IYD5a37of_rdlEfKmmwRVnFZEUH3tf7BHAQ.jpg?r=5c1",
+    "title": "Lokah Chapter 1: Chandra",
+    "id": 1290190,
+    "poster": "https://image.tmdb.org/t/p/w500/mVLgxigdqMEyluylocqYTZW8uP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AvMocO3q0kNboijAgbWaip36I8g.jpg",
     "mediaType": "movie"
   },
   {
@@ -11,6 +11,13 @@
     "id": 1083637,
     "poster": "https://image.tmdb.org/t/p/w500/n8GhftTjP05Zr9l6BBZNzWtIEpA.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/m3fcrOyJ6yGlFzZbw53rdaMMdcZ.jpg",
+    "mediaType": "movie"
+  },
+  {
+    "title": "They Call Him OG (2025)",
+    "id": 1080365,
+    "poster": "https://occ-0-7398-2774.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRb2E3gtAnDqlstu-VAAt-sGVFRVW8XykL-cdFJX4LnFRAmIC3sZ6UcFopKu-jzIYvRVtZW-J5n1OEW5qZuxMs0ASU01A9UsK2ryTmzeBE3fJIwjQfzKOi4kwMAJXDw9JhNEJh2WbNujb-ke9fAHdEWpQlzW3t3MkpRYY2JO84c9BQ.jpg?r=00a",
+    "backdrop": "https://occ-0-7398-2774.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfQy8FVGeYRhLMb3yBKT0UsHX9Mnbr1siP44tllVtvMKmMWCmuJMvZr6SfrcdQJ-sqe-mxJBrk995Jo4HyvPMtFIWST0eC9RGTtX68ij0AGOtFfQGJ25j6I2FsXwlvTb-IEJ_MQ03l8IYD5a37of_rdlEfKmmwRVnFZEUH3tf7BHAQ.jpg?r=5c1",
     "mediaType": "movie"
   },
   {
@@ -74,13 +81,6 @@
     "id": 1263029,
     "poster": "https://occ-0-7398-41.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWNDWzRY52PLr1lGXShJUR3Tcdqrn2UEEi0jZVDt3sK_N6u745FnAWJQcBY9BOEw1yPd4BOKWioN7lWUxh4jz4CRriARNAQag7SahCY7WdP3qMZsXv7jiWcdz7buyUc2mdAY3S5DmganrKm-fJBx9kuOA0ACLSK6wItF5FwtQzBygA.jpg?r=923",
     "backdrop": "https://occ-0-7398-41.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTA9r-IvjmIJ3a9xwsxRzGTKzCwLvmC01rh1OutwyB_oVNeRVUImn8Kr96LikPIQzfG0fu7mT5WrqvxmmaiqZkcVvYhX7sp1T_tIfxJGAWzAj0CYwjDEOuMXLl1Yli2CFTJJC6XDU-PE0seqfWUBmjsh66CoNqxeI9DE_YDvJ-u9tw.jpg?r=86c",
-    "mediaType": "movie"
-  },
-  {
-    "title": "Lokah Chapter 1: Chandra",
-    "id": 1290190,
-    "poster": "https://image.tmdb.org/t/p/w500/mVLgxigdqMEyluylocqYTZW8uP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/AvMocO3q0kNboijAgbWaip36I8g.jpg",
     "mediaType": "movie"
   },
   {
