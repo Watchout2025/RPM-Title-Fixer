@@ -7,6 +7,13 @@
     "mediaType": "movie"
   },
   {
+    "title": "Border 2 (2026)",
+    "id": 1213898,
+    "poster": "https://occ-0-7397-1500.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSKppBqGioEkiBEtRd58tfXySXBNr_Fe7Q4XEicqAoVZkdgLFkbYwP5KFjmEltOmsq-HFG44wa6Fa-MDyp8DgKlmS7-Fd2gmS4d0agicUITR0ko_lS4jSoUCgV9hP2dIrCT7Y4LSHcFj7uCkOPlNJeXM4bVsbb8_9D7xgMMV5z4.jpg?r=13c",
+    "backdrop": "https://occ-0-7397-1500.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSOMBHhQ_ESuBS4n2yIuRlM-QiUsEpzXFtyiSdN7oMw5d22Fu_XsQGFkJsGOtutFlBSFBgYU1-G5Vs7dsR3103Zzx30p9UwlCQJGi_mWp77c_uXqCLt2wAQXmbyvGg3Ta4qsSJ9SH6f9O1pGWgducYvMwCAwCYfZ12XD0Aq-W6rv.jpg?r=d8e",
+    "mediaType": "movie"
+  },
+  {
     "title": "The Rajasaab (2026)",
     "id": 1022453,
     "poster": "https://image.tmdb.org/t/p/w500/vRvoFaGZexSkUSbpzDKblkSY8Bz.jpg",
@@ -67,13 +74,6 @@
     "id": 1291608,
     "poster": "https://occ-0-1500-41.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXoJ6fcQjpN_Y3THsuPo-6IcDNUMhdie7DDx6spKit59WH-lK506j7GXt8rIlykp-tHGSrWJsVKDivvcyzAiQZUF2qgoKkIjXKcQnKIKhCM4P-_HlxWr-hbow3wjAVhAZOONbrTJjo-oaFT1E21wLLedM9JCimbjN7926Obgdag.jpg?r=b97",
     "backdrop": "https://occ-0-1500-41.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcUF5cdgDs0FFRHG_jB9NQPc0Ed_REeIlys85euldTAoh9f4gLHv8kNBHWC97rw16qglycE9QpFAMIWK-jUVeW_EtrGMd8KW2MYhgSsvlTFTUj0tFhqT8Htyp2QLgpx4LlzTaQrTrMrD9PkpN8SzSqEyOVTPoad_1Jd-xcJsRD7VsQ.jpg?r=d66",
-    "mediaType": "movie"
-  },
-  {
-    "title": "Border 2 (2026)",
-    "id": 1213898,
-    "poster": "https://image.tmdb.org/t/p/w500/hju9XncHxUxUS1GAJ4YqpdFCa5t.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/9sJgOvsTonp0MNZThXfEPqNEwDH.jpg",
     "mediaType": "movie"
   },
   {
